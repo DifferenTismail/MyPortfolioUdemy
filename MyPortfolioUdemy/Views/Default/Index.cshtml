@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html class="no-js" lang="tr">
+
+
+@await Component.InvokeAsync("_HeadComponentPartial")
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    @await Component.InvokeAsync("_NavbarComponentPartial") <!-- end s-header -->
+    <!-- home
+    ================================================== -->
+    @await Component.InvokeAsync("_FeatureComponentPartial")
+    <!-- about
+    ================================================== -->
+    @await Component.InvokeAsync("_AboutComponentPartial")
+    <!-- works
+    ================================================== -->
+    @await Component.InvokeAsync("_PortfolioComponentPartial") <!-- end works -->
+    <!-- testimonials
+    ================================================== -->
+    @await Component.InvokeAsync("_TestimonialComponentPartial")<!-- end s-testimonials -->
+    <!-- s-stats
+    ================================================== -->
+    @await Component.InvokeAsync("_StatisticComponentPartial")
+    <!-- contact
+    ================================================== -->
+    @await Component.InvokeAsync("_ContactComponentPartial") <!-- end s-contact -->
+    <!-- footer
+    ================================================== -->
+    @await Component.InvokeAsync("_FooterComponentPartial")
+</body>
+
+</html>
