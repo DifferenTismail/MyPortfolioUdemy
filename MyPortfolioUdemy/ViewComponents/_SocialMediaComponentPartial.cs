@@ -3,12 +3,12 @@ using MyPortfolioUdemy.DAL.Context;
 
 namespace MyPortfolioUdemy.ViewComponents
 {
-    public class _TestimonialComponentPartial : ViewComponent
+    public class _SocialMediaComponentPartial : ViewComponent
     {
         MyPortfolioContext context = new MyPortfolioContext();
         public IViewComponentResult Invoke()
         {
-            var values = context.Testimonials.ToList();
+            var values = context.SocialMedias.ToList();
             return View(values);
         }
     }
