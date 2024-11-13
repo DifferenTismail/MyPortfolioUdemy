@@ -1,14 +1,22 @@
 ﻿@model List<MyPortfolioUdemy.DAL.Entities.Skill>
+<style>
+    .progress {
+        background-color: #3498db; 
+        height: 20px; 
+        border-radius: 5px;
+    }
+
+</style>
 <div class="col-six tab-full right">
     <h3>Programlama Dilleri & Teknolojiler</h3>
 
     <ul class="skill-bars">
-        @foreach(var item in Model){
-        <li>
-            <div class="progress percent25"><span>@item.Value%</span></div>
-            <strong>@item.Title</strong>
-        </li>
+        @foreach (var item in Model)
+        {
+            <li>
+                <div class="progress" style="width:@item.Value%;"><span>@item.Value%</span></div>
+                <strong>@item.Title</strong>
+            </li>
         }
-      
     </ul>
 </div>
