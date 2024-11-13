@@ -1,6 +1,6 @@
 👋 Herkese Merhaba,
 
-M&Y Yazılım Eğitim Akademi Danışmanlık bünyesinde, Murat Yücedağ hocamın **"Full Stack .Net Core Development"** eğitimi kapsamında, Udemy üzerinden ücretsiz olarak yayınladığı **"Asp.Net Core ile Portfolyo Uygulamanızı Geliştirin"** kursunu başarıyla tamamladım! 🎉
+M&Y Yazılım Eğitim Akademi Danışmanlık bünyesinde, Murat Yücedağ hocamın **"Full Stack .Net Core Development"** eğitimi kapsamında, Udemy üzerinden ücretsiz olarak yayınladığı **"Asp.Net Core ile Portfolyo Uygulamanızı Geliştirin"** eğitimini tamamladım! 🎉
 
 ### Öne Çıkan Özellikler 🚀  
 - **Oturum Yönetimi ve Çerezler** 🍪: 30 dakikalık güvenli oturum süresi.  
