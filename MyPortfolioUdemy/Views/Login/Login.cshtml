@@ -1,0 +1,37 @@
+﻿@model MyPortfolioUdemy.Models.LoginViewModel
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="~/login/style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
+                <h1 class="opacity">Giriş</h1>
+                <form method="post">
+                    <input type="text" asp-for="Email" placeholder="Email" class="form-control" required />
+                    <input type="password" asp-for="Password" placeholder="Şifre" class="form-control" required />
+                    <button type="submit" class="opacity">Giriş</button>
+                </form>
+
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <div class="text-danger">@error.ErrorMessage</div>
+                }
+            </div>
+            <div class="circle circle-two"></div>
+        </div>
+        <div class="theme-btn-container"></div>
+    </section>
+    <script src="~/login/script.js"></script>
+</body>
+</html>

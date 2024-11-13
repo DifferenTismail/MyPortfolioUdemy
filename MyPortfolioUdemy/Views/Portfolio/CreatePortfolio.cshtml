@@ -1,0 +1,45 @@
+﻿@model Portfolio
+@{
+    ViewData["Title"] = "CreatePortfolio";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Proje</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Yeni Proje Ekle</div>
+                    </div>
+                    <div class="card-body">
+                        <form method="post">
+                            <label>Başlık</label>
+                            <input type="text" asp-for="Title" class="form-control mb-2" />
+
+                            <label>Alt Başlık</label>
+                            <input type="text" asp-for="SubTitle" class="form-control mb-2" />
+
+                            <label>Fotoğraf Url</label>
+                            <input type="text" asp-for="ImageUrl" class="form-control mb-2" />
+
+                            <label>Proje Url</label>
+                            <input type="text" asp-for="Url" class="form-control mb-2" />
+
+                            <label>Açıklama</label>
+                            <textarea rows="4" asp-for="Description" class="form-control mb-2"></textarea>
+
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-pencil-alt"></i>
+                                Proje Ekle
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
