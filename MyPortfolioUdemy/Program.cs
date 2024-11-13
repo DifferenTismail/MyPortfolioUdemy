@@ -1,27 +1,37 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Session ayarlarý
+builder.Services.AddDistributedMemoryCache(); // Bellek tabanlý cache
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Oturum süresi
+});
+
+// DbContext ve Controller servisleri
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Hata yönetimi ve geliþtirme ortamý kontrolü
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-app.UseRouting();
+// Session kullanýmýný etkinleþtir
+app.UseSession();
 
+// Routing ve authorization
+app.UseRouting();
 app.UseAuthorization();
 
+// Controller rotasý tanýmlamasý
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Default}/{action=Index}/{id?}");
 
 app.Run();
