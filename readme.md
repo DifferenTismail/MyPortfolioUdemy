@@ -3,7 +3,7 @@
 M&Y Yazılım Eğitim Akademi Danışmanlık bünyesinde, Murat Yücedağ hocamın **"Full Stack .Net Core Development"** eğitimi kapsamında, Udemy üzerinden ücretsiz olarak yayınladığı **"Asp.Net Core ile Portfolyo Uygulamanızı Geliştirin"** eğitimini tamamladım! 🎉
 
 ### Proje Amacı 🎯
-Bu projede, kişisel portföylerinizi sergileyebileceğiniz, içeriklerinizi dinamik olarak yönetebileceğiniz ve kullanıcı oturumlarını güvenli bir şekilde yönetebileceğiniz modern bir web uygulaması geliştirmeyi amaçladım. Özellikle yazılım geliştirenler için kişisel projelerini ve deneyimlerini sergileyebileceği bir platform oluşturmayı hedeflendim.
+Bu projede, kişisel portföylerinizi sergileyebileceğiniz, içeriklerinizi dinamik olarak yönetebileceğiniz ve kullanıcı oturumlarını güvenli bir şekilde yönetebileceğiniz modern bir web uygulaması geliştirmeyi amaçladım. Özellikle yazılım geliştirenler için kişisel projelerini ve deneyimlerini sergileyebileceği bir platform oluşturmayı hedefledim.
 
 
 ### Öne Çıkan Özellikler 🚀  
